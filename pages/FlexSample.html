@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset= "utf-8">
+        <title> Codepen - Demo Flexbox 3</title>
+        <style>
+            body { padding: 2em; }
+            
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: rgb(197, 69, 31);
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .footerContainer{
+                display:flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgrey;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .mainContainer{
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+            .mainContentItem{
+                text-align: left;
+                background: deepskyblue;
+            }
+            article{
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+            
+            .sideBarLeftItem{background:gold;}
+            .sideBarRightItem{background:hot pink;}
+
+            .sideBarItem{flex: 1 0 0;   border: 0px solid green;}
+            .mainContentItem{flex: 4 0px;}
+            .sideBarLeftItem{order: 1;}
+            .mainContentItem{order: 2;}
+            .sideBarRightItem{order: 3;}
+        </style>
+    </head> 
+    <body>
+        <header class="headerContainer"><h1> HEADER - Sample Flexbox Demo</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2> Pratham Article </h2>
+                    <p> Education truly liberates a man. A nation is nothing without the most important resource, that is human resource. </p>
+                </article>
+                <article>
+                    <h2> Second Article </h2>
+                    <p> Necessary to have men and women of courage and strength</p>
+                </article>
+                <article>
+                    <h2>Third Article </h2>
+                    <p>Extraordinary times call for extraordinary measures </p>
+                </article>
+            </section>
+            <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left side Bar</p></div></sideBar>
+            <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right side Bar</p></div></sideBar>
+        </div>
+        <footer class="footerContainer"> footer</footer>
+    </body>
+</html>
